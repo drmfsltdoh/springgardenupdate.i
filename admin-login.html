@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <h2>Admin Login</h2>
+    <input type="text" id="admin-username" placeholder="Username">
+    <input type="password" id="admin-password" placeholder="Password">
+    <button onclick="adminLogin()">Login</button>
+
+    <p id="login-error" style="color: red;"></p>
+
+    <button onclick="adminLogout()">Logout</button>
+
+<script>
+    function adminLogout() {
+        localStorage.removeItem("adminLoggedIn");
+        window.location.href = "admin-login.html";
+    }
+</script>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

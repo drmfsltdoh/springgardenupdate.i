@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRING BLOCK</title>
+    <link rel="stylesheet" href="class.css">
+    <link rel="shortcut icon" href="/omo_blocks_2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To Spring Block Industries</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Our Products</a></li>
+                <li><a href="gallery.html">Images</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Building Trust with Every Block</h1>
+            <p>Providing top-quality blocks to meet your client needs.</p>
+            <a href="product.html" class="btn"><i class="fas fa-box"></i> Explore Our Products</a>
+        </div>
+    </section>
+
+    <button id="scrollToTop">&#8593;</button>
+
+    <section class="slider-container">
+        <div class="slider">
+            <img src="/original dust 1.jpeg" alt="Dust 1">
+            <img src="/block.jpeg" alt="9 inch Block">
+            <img src="/original dust 2.jpeg" alt="Dust 2">
+            <img src="/gravel.jpeg" alt="Gravel">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+        <button class="next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Floating Chat Button -->
+    <div id="chat-container">
+        <div id="chat-button" onclick="toggleChat()">💬</div>
+        <div id="chat-box">
+            <div id="chat-header">
+                <span>Chat with Us</span>
+                <button onclick="toggleChat()">X</button>
+            </div>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="sendMessage(event)">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Spring Block. Your trusted supplier for high-quality blocks and building materials.</p>
+    </footer>
+
+    <div class="image-container">
+        <img src="image1.jpg" alt="Background Image">
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>

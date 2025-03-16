@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Spring Block</title>
+    <link rel="stylesheet" href="class.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #c2185b;
+            color: white;
+            padding: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .contact-container:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-container p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #444;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .contact-button {
+            display: inline-block;
+            background: #c2185b;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 20px;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+
+        .contact-button:hover {
+            background: #9b1248;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #c2185b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 18px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Contact Us</header>
+
+    <!-- Contact Details -->
+    <div class="contact-container">
+        <p>Email: <span class="highlight">cokorie@gmail.com</span></p>
+        <p>Phone: <span class="highlight">08037483852,08050553218</span></p>
+        <p>Location: <span class="highlight">Shalom Rd, Trademore Estate, Abuja</span></p>
+
+        <!-- Contact Button -->
+        <button class="contact-button">Get in Touch</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Spring Block</p>
+    </footer>
+
+</body>
+</html>
